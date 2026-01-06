@@ -7,9 +7,9 @@ A barebones OS and IDE agnostic C++23 SDL3 CMake project to kickstart your dream
 Download and build a local copy of **SDL3** ([installation instructions](https://github.com/libsdl-org/SDL/blob/main/INSTALL.txt)) and **SDL3_Mixer** (The've no
 installation instructions, but its near identical to **SDL3**s)
 
-Make a `/lib` and `/include/SDL3` and `/include/SDL3_Mixer` directories in the root of this project.
+Make `/lib`, `/include/SDL3`, and `/include/SDL3_Mixer` directories in the root of this project.
 
-I'm not a fan of downloading prebuilt libraries or installing them globally, so I've included the steps to build the
+I'm not a fan of downloading prebuilt libraries or installing them globally, so I've added the steps to build the
 dependencies and include them in the project.
 
 ### Build SDL3
@@ -22,8 +22,7 @@ Copy the generated `*.dylib` files from the compiled SDL library into `/lib`. In
 
 #### Windows
 
-Download and build **SDL3** on your platform. Move the `.lib` file into `/lib` and the `.dll` file into the same
-directory as your executable.
+Download and build **SDL3** on your platform. Move the `.lib` file into `/lib` and the `.dll` file as a sibling of the generated executable.
 
 ### Build SDL3_Mixer
 
